@@ -1,0 +1,227 @@
+<!--
+  Portfolio for Albert Piikov
+  Built from your existing SEO-optimized <head>. Replace the placeholder
+  text in About/Projects with your own — those spots are marked with
+  "EDIT ME" comments.
+
+  Structure:
+    index.html  - this file
+    index.css   - styles (dark theme)
+    index.js    - mobile nav + smooth scroll + active link highlight
+    images/     - put your project screenshots + favicon.png here
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Primary SEO -->
+  <title>Albert Piikov | Full Stack Developer</title>
+  <meta name="description" content="Albert Piikov is a Full Stack Developer building web applications with React, Node.js, Python, Java, and SQL. Available for new opportunities." />
+  <meta name="keywords" content="Albert Piikov, Full Stack Developer, React Developer, Node.js Developer, Python Developer, Java Developer, SQL, PHP, Web Developer, Software Engineer, Portfolio" />
+  <meta name="author" content="Albert Piikov" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alpiik.github.io/github-portfolio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alpiik.github.io/github-portfolio/" />
+  <meta property="og:title" content="Albert Piikov | Full Stack Developer" />
+  <meta property="og:description" content="Albert Piikov is a Full Stack Developer building web applications with React, Node.js, Python, Java, and SQL. Available for new opportunities." />
+  <meta property="og:image" content="https://alpiik.github.io/github-portfolio/og-image.png" />
+  <meta property="og:image:alt" content="Albert Piikov — Full Stack Developer" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Albert Piikov" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://alpiik.github.io/github-portfolio/" />
+  <meta name="twitter:title" content="Albert Piikov | Full Stack Developer" />
+  <meta name="twitter:description" content="Albert Piikov is a Full Stack Developer building web applications with React, Node.js, Python, Java, and SQL. Available for new opportunities." />
+  <meta name="twitter:image" content="https://alpiik.github.io/github-portfolio/og-image.png" />
+  <meta name="twitter:image:alt" content="Albert Piikov — Full Stack Developer" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Albert Piikov",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://alpiik.github.io/github-portfolio/",
+    "email": "Albert.Piikov@gmail.com",
+    "sameAs": [
+      "https://github.com/alpiik"
+    ],
+    "knowsAbout": [
+      "Full Stack Development",
+      "Web Development",
+      "React",
+      "Node.js",
+      "Python",
+      "Java",
+      "PHP",
+      "SQL"
+    ]
+  }
+  </script>
+
+  <meta name="theme-color" content="#0f172a" />
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#hero" class="logo">Albert Piikov</a>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero" aria-label="Introduction">
+      <div class="hero-inner">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Albert Piikov</h1>
+        <p class="role">Full Stack Developer</p>
+        <p class="lede">
+          Building performant web applications and APIs with
+          React, Node.js, Python, Java, and SQL.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="https://github.com/alpiik" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            View GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <div class="about-content">
+        <!-- EDIT ME: replace with your real bio -->
+        <p>
+          I'm a full stack developer who enjoys turning ideas into fast,
+          reliable web applications. My day-to-day toolkit spans React on
+          the frontend and Node.js, Python, Java, and SQL on the backend,
+          and I care a lot about writing code that's easy for the next
+          person (often future me) to read.
+        </p>
+        <p>
+          Outside of shipping features, I like digging into performance
+          problems, automating the boring parts of a workflow, and
+          picking up whatever tool gets the job done well. Currently
+          open to new opportunities — see below for ways to reach me.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <!-- EDIT ME: swap in your real projects, links, and screenshots -->
+      <div class="project-grid">
+
+        <article class="project-card">
+          <img src="images/LaravelP1.png" alt="LaravelP1 project screenshot" class="project-image" />
+          <div class="project-body">
+            <h3>Blog page</h3>
+            <p>A Laravel + React blog platform with secure authentication, public/private post sharing, image uploads, and profile customization — built to practice full-stack development with a modern PHP backend and a React-driven frontend.</p>
+            <ul class="tags">
+              <li>Laravel</li>
+              <li>PHP</li>
+              <li>React</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Live demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>Project Two</h3>
+            <p>A short description of what this project does and the problem it solves.</p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>SQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Live demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>Project Three</h3>
+            <p>A short description of what this project does and the problem it solves.</p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>PHP</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Live demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Source</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills-grid">
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Want to work together or just say hi? I'm available for new opportunities.</p>
+      <div class="contact-links">
+        <a href="mailto:Albert.Piikov@gmail.com" class="btn btn-primary">Albert.Piikov@gmail.com</a>
+        <a href="https://github.com/alpiik" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          github.com/alpiik
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Albert Piikov. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
