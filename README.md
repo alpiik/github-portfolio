@@ -3,7 +3,7 @@
 Personal portfolio site for Albert Piikov, a Full Stack Developer building
 web applications and APIs with React, Node.js, Python, Java, and SQL.
 
-**Live site:** https://alpiik.github.io/github-portfolio/
+**Live site:** alpiik.github.io/github-portfolio/
 
 ## About
 
