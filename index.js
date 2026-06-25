@@ -39,3 +39,34 @@ sections.forEach((section) => observer.observe(section));
 
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Copy email to clipboard
+const copyEmailBtn = document.getElementById("copy-email");
+if (copyEmailBtn) {
+  const email = copyEmailBtn.dataset.email;
+  const originalLabel = copyEmailBtn.textContent;
+  copyEmailBtn.style.minWidth = `${copyEmailBtn.offsetWidth}px`;
+
+  copyEmailBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+    } catch (err) {
+      // Fallback for browsers without Clipboard API support
+      const textarea = document.createElement("textarea");
+      textarea.value = email;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+    }
+
+    copyEmailBtn.textContent = "Copied!";
+    copyEmailBtn.classList.add("copied");
+    setTimeout(() => {
+      copyEmailBtn.textContent = originalLabel;
+      copyEmailBtn.classList.remove("copied");
+    }, 1800);
+  });
+}

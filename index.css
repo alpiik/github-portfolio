@@ -97,6 +97,16 @@ h2::after {
   color: var(--accent);
 }
 
+button.btn {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-ghost.copied {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* ---------- Header / nav ---------- */
 header {
   position: sticky;
