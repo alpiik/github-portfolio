@@ -45,9 +45,13 @@ const copyEmailBtn = document.getElementById("copy-email");
 if (copyEmailBtn) {
   const email = copyEmailBtn.dataset.email;
   const originalLabel = copyEmailBtn.textContent;
-  copyEmailBtn.style.minWidth = `${copyEmailBtn.offsetWidth}px`;
+  let widthLocked = false;
 
   copyEmailBtn.addEventListener("click", async () => {
+    if (!widthLocked) {
+      copyEmailBtn.style.minWidth = `${copyEmailBtn.offsetWidth}px`;
+      widthLocked = true;
+    }
     try {
       await navigator.clipboard.writeText(email);
     } catch (err) {
